@@ -37,7 +37,7 @@ def trainModel(path):
   
 
 
-aafaq_model = trainModel("./faces/aafaq/")
-print("Aafaq's_model trained sucessefully")
-friend_model = trainModel("./faces/friend/")
+absar_model = trainModel("C:/Users/ABSAR/OneDrive/Pictures/faces/user1/")
+print("absar's_model trained sucessefully")
+friend_model = trainModel("C:/Users/ABSAR/OneDrive/Pictures/faces/user2/")
 print("Friend's_model trained sucessefully")

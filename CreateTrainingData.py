@@ -1,11 +1,10 @@
 #   STEP 1 CREATE DATA FOR TRAINING THE MODEL
 #Create Training Data
-from whatsappmsg import send_whatsApp_msg
 import numpy as np
 import cv2
 
 # load haarcascade face classifier
-face_classifier = cv2.CascadeClassifier( "haarcascade_frontalface_default.xml" )
+face_classifier = cv2.CascadeClassifier(  cv2.data.haarcascades +"haarcascade_frontalface_default.xml" )
  
 # Load functions
 def face_extractor(img):
@@ -60,8 +59,8 @@ def collect_samples(path, count):
 i =0 
 j=0
 
-print("Collecting Samples Of Sheikh Aafaq Rashid")
-collect_samples("./faces/aafaq/", i)
+print("Collecting Samples Absar Qureshi")
+collect_samples("C:/Users/ABSAR/OneDrive/Pictures/faces/user1/", i)
 
 print("Collecting Samples Of Friend")
-collect_samples("./faces/friend/", j)
+collect_samples("C:/Users/ABSAR/OneDrive/Pictures/faces/user2/", j)

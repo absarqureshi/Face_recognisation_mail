@@ -4,10 +4,10 @@ provider "aws" {
 }
 
 #-------------AWS_INSTANCE--------------------------
-resource "aws_instance" "myOS" {
-  ami           = "ami-0ad704c126371a549"
+resource "aws_instance" "Absar123" {
+  ami           = "ami-0ad704c126371a549 "
   instance_type = "t2.micro"
-  key_name = "absarkey"
+  key_name = "Absar123"
  tags = {
     Name = "Os by face_recognition"	
   }
@@ -35,7 +35,7 @@ resource "null_resource"  "nullremote" {
  connection {
     type     = "ssh"
     user     = "ec2-user"
-    private_key = file("./absarkey.pem")
+    private_key = file("C:\Users\ABSAR")
     host     = aws_instance.myOS.public_ip
   }
 
